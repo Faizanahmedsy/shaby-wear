@@ -4,17 +4,14 @@ import {
   ServicesSection,
   ShowcaseSection,
 } from "@/components/modules";
+import { Categories, HeroV2 } from "@/components/modules/landing";
 import React from "react";
 
 export default function HomePage() {
   return (
     <>
-      <HeroSection />
-      {/* <div className="px-32 space-y-10 "> */}
-      <AboutSection />
-      <ShowcaseSection />
-      <ServicesSection />
-      {/* </div> */}
+      <HeroV2 />
+      <Categories />
     </>
   );
 }
