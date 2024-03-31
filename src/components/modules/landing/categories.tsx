@@ -6,8 +6,8 @@ export default function Categories() {
   return (
     <Wrapper>
       <div className="flex justify-center items-center flex-col">
-        <TextSubTitle className="">Catrgories</TextSubTitle>
-        <div>bentro grid</div>
+        <TextSubTitle className="">Categories</TextSubTitle>
+        <CategoriesBento />
       </div>
     </Wrapper>
   );
@@ -21,18 +21,60 @@ function TextSubTitle({
   className?: string;
 }) {
   return (
-    <h2 className={cn("text-4xl font-bold p-2 relative", className)}>
-      {children}
-      <span
-        className="absolute left-0 bottom-0 w-full h-4 "
-        style={{
-          backgroundImage: `url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,160L40,149.3C80,139,160,117,240,106.7C320,96,400,96,480,90.7C560,85,640,75,720,90.7C800,107,880,149,960,181.3C1040,213,1120,235,1200,240C1280,245,1360,235,1400,229.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>')`,
-          backgroundRepeat: "repeat-x",
-        }}
-      ></span>
-    </h2>
+    <h2 className={cn("text-4xl font-bold p-2", className)}>{children}</h2>
   );
 }
 function TextTitle({ children }: { children: React.ReactNode }) {
   return <h1 className="text-4xl font-bold">{children}</h1>;
+}
+
+function CategoriesBento() {
+  return (
+    <>
+      <div className="grid grid-cols-4 gap-5">
+        <KittyCards />
+        <KittyCards />
+        <KittyCards />
+        <KittyCards />
+
+        {/* <KittyCards>T shirts</KittyCards> */}
+        {/* <div>Jeans</div>
+        <div>Joggers</div> */}
+      </div>
+
+      {/* <div className="grid grid-cols-3 gap-5">
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          corporis tenetur corrupti ab officia adipisci fuga illum doloremque
+          optio necessitatibus!
+        </div>
+        <div className="col-span-2">
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            optio voluptate nisi saepe assumenda enim porro mollitia qui
+            sapiente similique.
+          </div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            optio voluptate nisi saepe assumenda enim porro mollitia qui
+            sapiente similique.
+          </div>
+        </div>
+      </div> */}
+    </>
+  );
+}
+
+function KittyCards() {
+  return (
+    <div className="p-6">
+      <div className="flex justify-center items-center">
+        <div className="h-[300px] w-[250px] bg-slate-200"></div>
+      </div>
+      <div>Sexy Jeans</div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, vitae.
+      </div>
+    </div>
+  );
 }
