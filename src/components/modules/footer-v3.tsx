@@ -5,7 +5,7 @@ const FooterV3 = () => {
     <footer className="py-12">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between ">
         <div className="flex flex-col items-center lg:items-start mb-6 lg:mb-0">
-          <h2 className="text-3xl font-bold text-teal-800 mb-2">Road Craft</h2>
+          <h2 className="text-3xl font-bold text-teal-800 mb-2">Shaby Wear</h2>
           <p className="text-sm">Building a Sustainable Future</p>
         </div>
 
@@ -64,7 +64,7 @@ const FooterV3 = () => {
       </div>
 
       <div className="mt-8 text-center text-gray-500">
-        &copy; {new Date().getFullYear()} Road Craft. All rights reserved.
+        &copy; {new Date().getFullYear()} Shaby Wear. All rights reserved.
       </div>
     </footer>
   );
