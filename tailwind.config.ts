@@ -102,11 +102,16 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        shine: {
+          from: { backgroundPosition: "200% 0" },
+          to: { backgroundPosition: "-200% 0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 1000ms var(--ani-delay, 0ms) ease-out forwards",
+        shine: "shine 8s ease-in-out infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },

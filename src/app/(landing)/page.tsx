@@ -6,6 +6,7 @@ import {
   TopSelling,
   WhyUs,
 } from "@/components/modules/landing";
+import HeroFormCenterAlignedWithAForm from "@/components/kitty/kitty-cta";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Banner />
       <TopSelling />
       <WhyUs />
+      <HeroFormCenterAlignedWithAForm />
     </>
   );
 }
