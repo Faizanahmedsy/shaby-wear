@@ -1,18 +1,20 @@
-import { KittyHero } from "@/components/kitty";
-import {
-  AboutSection,
-  HeroSection,
-  ServicesSection,
-  ShowcaseSection,
-} from "@/components/modules";
-import { Categories, HeroV2 } from "@/components/modules/landing";
 import React from "react";
+import {
+  Banner,
+  Categories,
+  HeroV2,
+  TopSelling,
+  WhyUs,
+} from "@/components/modules/landing";
 
 export default function HomePage() {
   return (
     <>
-      <KittyHero />
+      <HeroV2 />
       <Categories />
+      <Banner />
+      <TopSelling />
+      <WhyUs />
     </>
   );
 }

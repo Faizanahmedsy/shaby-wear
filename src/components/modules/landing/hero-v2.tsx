@@ -5,7 +5,7 @@ export default function HeroV2() {
   return (
     <>
       {/* <div className="h-[calc(100vh-100px)] "> */}
-      <div className="bg-brand-primary">
+      <div className="bg-brand-primary rounded-xl mx-6">
         <Wrapper>
           <div className="flex items-center justify-between py-32">
             <h1 className="text-4xl font-bold text-white">
